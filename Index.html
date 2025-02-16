@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Runners: Time Shift</title>
+  <!-- Використання ретро-шрифту, наприклад, Press Start 2P -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <style>
+    /* Основні стилі для сторінки */
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      background-image: url('background.jpg'); /* Замініть на свій фон */
+      background-size: cover;
+      background-position: center;
+    }
+    /* Напівпрозорий оверлей для кращої читабельності */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+    /* Контейнер з контентом */
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 50px 20px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .tagline {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    .cta {
+      margin: 30px 0;
+    }
+    .cta button {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1em;
+      padding: 15px 30px;
+      background: #ff4081;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta button:hover {
+      background: #e73370;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .feature {
+      flex: 1 1 300px;
+      margin: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    .feature h3 {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .cta button {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <header>
+      <h1>Pixel Runners: Time Shift</h1>
+      <p class="tagline">Manipulate time. Run endlessly. Beat the future!</p>
+    </header>
+    <section class="intro">
+      <p>Приготуйтесь до епічної ретро-пригоди з унікальною механікою керування часом!</p>
+    </section>
+    <section class="cta">
+      <button onclick="window.location.href='signup.html'">Підписатися на бета-тест</button>
+    </section>
+    <section class="features">
+      <div class="feature">
+        <h3>Унікальний геймплей</h3>
+        <p>Використовуй маніпуляцію часом, щоб ухилятися від перешкод та долати виклики.</p>
+      </div>
+      <div class="feature">
+        <h3>Ретро Pixel Art</h3>
+        <p>Занурся в атмосферу класичних ігор з сучасним підходом до візуального стилю.</p>
+      </div>
+      <div class="feature">
+        <h3>Динамічні рівні</h3>
+        <p>Кожен запуск гри – новий виклик завдяки процедурній генерації рівнів.</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 Pixel Runners. Всі права захищені.</p>
+    </footer>
+  </div>
+</body>
+</html>
