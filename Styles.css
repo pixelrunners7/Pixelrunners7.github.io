@@ -1,7 +1,9 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    body {
+    font-family: 'Press Start 2P', cursive;
+}
     background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     color: white;
     text-align: center;
