@@ -1,71 +1,141 @@
-width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Runners: Time Shift</title>
-    <link rel="stylesheet" href="Styles.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"></head>
+    <!-- Custom Pixel Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-shadow: none;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn {
+            width: 180px;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+        }
+        .appstore {
+            background-color: white;
+            color: black;
+        }
+        .googleplay {
+            background-color: #34A853;
+            color: white;
+        }
+        .subscribe-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .subscribe-btn:hover {
+            background-color: #e91e63;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #ff4081;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: gray;
+        }
+        .footer a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
 <body>
-    <!-- Navigation Menu -->
-    <header>
-        <div class="logo">Pixel Runners</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <div class="container">
         <h1>Pixel Runners: Time Shift</h1>
-        <p>An epic pixel runner with time manipulation mechanics!</p>
-        <div class="buttons">
+        <p>Manipulate time. Run endlessly. Beat the future!</p>
+
+        <!-- Download Buttons -->
+        <div class="btn-container">
             <a href="#" class="btn appstore">Download on the App Store</a>
             <a href="#" class="btn googleplay">Download on Google Play</a>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About the Game</h2>
-        <p>Pixel Runners: Time Shift is a fast-paced runner where you can control time and overcome obstacles!</p>
-    </section>
+        <!-- Subscribe Button -->
+        <a href="#" class="subscribe-btn">Subscribe for Updates</a>
 
-    <!-- Screenshots Section -->
-    <section id="screenshots">
-        <h2>Screenshots</h2>
-        <div class="gallery">
-            <img src="screenshot1.jpg" alt="Screenshot 1">
-            <img src="screenshot2.jpg" alt="Screenshot 2">
-            <img src="screenshot3.jpg" alt="Screenshot 3">
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://tiktok.com/@pixelrunners_official" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com/pixelrunners_official" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@pixelrunners_official" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.gg/YOUR_DISCORD_LINK" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with us: <a href="mailto:contact@apexforgestudio.com" class="contact-email">contact@apexforgestudio.com</a>
-        <div class="socials">
-            <a href="https://www.tiktok.com/@pixelrunners_off?_t=ZN-8u6YUFljofu&_r=1">TikTok</a>
-            <a href="https://instagram.com/PixelRunners_Official">Instagram</a>
-            <a href="https://youtube.com/@pixelrunners_official">YouTube</a>
+        <!-- Footer with Website Link -->
+        <div class="footer">
+            <p>© 2025 Apex Forge Studio. All rights reserved.</p>
+            <p>Visit our official website: <a href="https://apexforgestudio.com" target="_blank">apexforgestudio.com</a></p>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Apex Forge Studio. All rights reserved.</p>
-    <!-- Subscription Section -->
-<section id="subscribe">
-    <h2>Stay Updated</h2>
-    <p>Subscribe to our newsletter for the latest updates on Pixel Runners: Time Shift!</p>
-    <form action="#" method="POST">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2025 Apex Forge Studio. All rights 
+</body>
+</html>
