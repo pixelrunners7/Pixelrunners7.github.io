@@ -1,11 +1,8 @@
 /* General Styles */
 body {
     margin: 0;
-    body {
     font-family: 'Press Start 2P', cursive;
-}
-}
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    background: linear-gradient(135deg, #161616, #1b1b2f);
     color: white;
     text-align: center;
 }
@@ -16,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background: rgba(0, 0, 0, 0.8);
+    background: black;
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,10 +31,6 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
@@ -58,135 +51,97 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('background.jpg') center/cover no-repeat;
-    text-shadow: 2px 2px 8px black;
+    background: black;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 1.3;
 }
 
 .hero p {
-    font-size: 20px;
-    max-width: 600px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin: 20px 0;
 }
 
-/* Buttons */
-.buttons .btn {
+.cta-button {
     display: inline-block;
-    padding: 12px 25px;
-    margin: 10px;
-    font-size: 18px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #ff4d6d;
     color: white;
-    border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease-in-out;
-}
-
-.appstore {
-    background: #333;
-}
-
-.googleplay {
-    background: #1db954;
-}
-
-.appstore:hover {
-    background: #555;
-}
-
-.googleplay:hover {
-    background: #1ed760;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 /* Sections */
-section {
-    padding: 80px 10%;
+.about, .screenshots, .contact, .subscribe {
+    padding: 60px 10%;
+    background: #1b1b2f;
 }
 
-/* Gallery */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .gallery img {
-    width: 250px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    width: 200px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 5px;
 }
 
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Social Links */
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.socials a {
-    color: white;
+/* Contact */
+.contact a {
+    color: #ff4d6d;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
 }
-.contact-email {
-    color: #ff4d6d; /* Червоний відтінок */
-    font-weight: bold;
+
+.contact a:hover {
     text-decoration: underline;
 }
-.socials a:hover {
-    color: #ff4d6d;
+
+/* Subscribe */
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background: #ff1e4d;
 }
 
 /* Footer */
 footer {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    margin-top: 50px;
-} 
-/* Download Buttons */
-.download-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.download-buttons a {
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s, background 0.3s;
-}
-
-.download-buttons a:hover {
-    transform: scale(1.05);
-}
-
-/* App Store Button */
-.app-store {
-    background: #ffffff;
-    color: #000;
-    border: 2px solid #000;
-}
-
-.app-store:hover {
-    background: #f1f1f1;
-}
-
-/* Google Play Button */
-.google-play {
-    background: #34a853;
+    background: black;
     color: white;
-}
-
-.google-play:hover {
-    background: #2a8e46;
+    font-size: 12px;
 }
