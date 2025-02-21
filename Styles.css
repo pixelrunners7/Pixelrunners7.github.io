@@ -132,7 +132,11 @@ section {
     font-size: 18px;
     transition: color 0.3s;
 }
-
+.contact-email {
+    color: #ff4d6d; /* Червоний відтінок */
+    font-weight: bold;
+    text-decoration: underline;
+}
 .socials a:hover {
     color: #ff4d6d;
 }
