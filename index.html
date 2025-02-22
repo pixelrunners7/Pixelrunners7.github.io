@@ -1,143 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="Styles.css?v=2">
-    <link rel="stylesheet" href="styles.css?v=2">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Runners: Time Shift</title>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Custom Pixel Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #181818;
+    color: #f0f0f0;
+    text-align: center;
+}
 
-    <!-- FontAwesome for Social Media Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+header {
+    background-color: #111;
+    padding: 20px;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: black;
-            color: white;
-            font-family: 'Press Start 2P', cursive;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .container {
-            width: 90%;
-            max-width: 600px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            text-shadow: none;
-        }
-        p {
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .btn-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        .btn {
-            width: 180px;
-            padding: 12px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: center;
-            display: inline-block;
-        }
-        .appstore {
-            background-color: white;
-            color: black;
-        }
-        .googleplay {
-            background-color: #34A853;
-            color: white;
-        }
-        .subscribe-btn {
-            background-color: #ff4081;
-            color: white;
-            padding: 12px 20px;
-            font-size: 14px;
-            font-weight: bold;
-            border: none;
-            text-transform: uppercase;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .subscribe-btn:hover {
-            background-color: #e91e63;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: white;
-            font-size: 24px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #ff4081;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: gray;
-        }
-        .footer a {
-            color: #ff4081;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            color: white;
-        }
-    </style>
-</head>
-<body>
+header nav ul {
+    list-style: none;
+}
 
-    <div class="container">
-        <h1>Pixel Runners: Time Shift</h1>
-        <p>Manipulate time. Run endlessly. Beat the future!</p>
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-        <!-- Download Buttons -->
-        <div class="btn-container">
-            <a href="#" class="btn appstore">Download on the App Store</a>
-            <a href="#" class="btn googleplay">Download on Google Play</a>
-        </div>
+header nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-        <!-- Subscribe Button -->
-        <a href="#" class="subscribe-btn">Subscribe for Updates</a>
+header nav ul li a:hover {
+    color: #f06292;
+}
 
-        <!-- Social Media Links -->
-        <div class="social-icons">
-            <a href="https://tiktok.com/@pixelrunners_official" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://instagram.com/pixelrunners_official" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/@pixelrunners_official" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://discord.gg/YOUR_DISCORD_LINK" target="_blank"><i class="fab fa-discord"></i></a>
-        </div>
+#hero {
+    background-color: #1f1f1f;
+    padding: 80px 20px;
+}
 
-        <!-- Footer with Website Link -->
-        <div class="footer">
-            <p>© 2025 Apex Forge Studio. All rights reserved.</p>
-            <p>Visit our official website: <a href="https://apexforgestudio.com" target="_blank">apexforgestudio.com</a></p>
-        </div>
-    </div>
+#hero h1 {
+    font-size: 3rem;
+    color: #f06292;
+    margin-bottom: 20px;
+}
 
-</body>
-</html>
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#hero .buttons {
+    margin-bottom: 20px;
+}
+
+#hero .buttons a {
+    background-color: #f06292;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#hero .buttons a:hover {
+    background-color: #ec407a;
+}
+
+#hero .subscribe {
+    color: #f06292;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f06292;
+}
+
+#screenshots .screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#screenshots img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact .social-links a {
+    margin: 0 10px;
+    color: #f06292;
+    text-decoration: none;
+}
+
+#contact .social-links a:hover {
+    color: #ec407a;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    color: #f0f0f0;
+}
+
+footer p {
+    font-size: 14px;
+}
