@@ -7,6 +7,59 @@ body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #ffcc00;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.download-buttons {
+    margin: 20px;
+}
+
+.download-buttons a {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 15px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.screenshots img {
+    width: 150px;
+    margin: 10px;
+}
 
 /* Header */
 header {
