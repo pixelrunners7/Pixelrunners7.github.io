@@ -1,216 +1,115 @@
-/* General Styles */
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
+    box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #181818;
+    color: #f0f0f0;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-h1, h2, h3 {
-    color: #ffcc00;
+header {
+    background-color: #111;
+    padding: 20px;
 }
 
-nav {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
-    padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #f0f0f0;
     text-decoration: none;
     font-size: 18px;
 }
 
-.download-buttons {
-    margin: 20px;
+header nav ul li a:hover {
+    color: #f06292;
 }
 
-.download-buttons a {
-    display: inline-block;
-    background: #ffcc00;
-    color: black;
-    padding: 15px 25px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+#hero {
+    background-color: #1f1f1f;
+    padding: 80px 20px;
 }
 
-.screenshots img {
-    width: 150px;
-    margin: 10px;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff4081;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff4081;
-}
-
-/* Hero Section */
-.hero {
-    padding: 150px 20px;
-    background: linear-gradient(135deg, #161616, #1e1e1e);
-}
-
-.hero h1 {
-    font-size: 32px;
-}
-
-.hero p {
-    font-size: 14px;
+#hero h1 {
+    font-size: 3rem;
+    color: #f06292;
     margin-bottom: 20px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
+#hero .buttons {
+    margin-bottom: 20px;
+}
+
+#hero .buttons a {
+    background-color: #f06292;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 0 10px;
     text-decoration: none;
-    width: 200px;
-    text-align: center;
+    border-radius: 5px;
 }
 
-.appstore {
-    background-color: white;
-    color: black;
+#hero .buttons a:hover {
+    background-color: #ec407a;
 }
 
-.googleplay {
-    background-color: #34A853;
-    color: white;
+#hero .subscribe {
+    color: #f06292;
 }
 
-/* About Section */
-.about {
-    padding: 50px 20px;
-    background: #1e1e1e;
+section {
+    padding: 60px 20px;
 }
 
-.about h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f06292;
 }
 
-/* Screenshots Section */
-.screenshots {
-    padding: 50px 20px;
-}
-
-.screenshot-gallery {
+#screenshots .screenshots {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
 }
 
-.screenshot {
-    width: 150px;
-    height: 100px;
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 12px;
+#screenshots img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Contact Section */
-.contact {
-    padding: 50px 20px;
-    background: #1e1e1e;
-}
-
-.contact a {
-    color: #ff4081;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: white;
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
+#contact .social-links a {
     margin: 0 10px;
-    color: white;
+    color: #f06292;
     text-decoration: none;
-    font-size: 16px;
 }
 
-/* Footer */
+#contact .social-links a:hover {
+    color: #ec407a;
+}
+
 footer {
+    background-color: #111;
     padding: 20px;
-    background: black;
-    font-size: 12px;
-    color: gray;
+    color: #f0f0f0;
+}
+
+footer p {
+    font-size: 14px;
 }
