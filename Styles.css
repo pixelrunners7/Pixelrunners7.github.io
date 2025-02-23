@@ -67,9 +67,9 @@ body {
 }
 
 .contact-email {
-    color: #ff0033;
+    color: red;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /* Прибирає підкреслення */
 }
 
 .contact-email:hover {
