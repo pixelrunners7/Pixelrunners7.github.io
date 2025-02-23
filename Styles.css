@@ -124,29 +124,37 @@ nav ul li a:hover {
     transition: transform 0.2s, background 0.3s;
 }
 
+.download-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-buttons a {
+    font-size: 20px; /* Збільшений розмір тексту */
+    padding: 15px 30px; /* Внутрішні відступи для більшого розміру кнопок */
+    display: inline-block; /* Робить кнопки блоками */
+    text-align: center;
+    border-radius: 10px; /* Закруглені кути */
+    text-decoration: none; /* Прибирає підкреслення у посилань */
+    font-weight: bold;
+    margin: 10px; /* Відстань між кнопками */
+    transition: 0.3s; /* Плавний ефект при наведенні */
+}
+
+.download-buttons .app-store {
+    background-color: #ffffff; /* Білий фон */
+    color: black; /* Чорний текст */
+    border: 2px solid black; /* Чорна рамка */
+}
+
+.download-buttons .google-play {
+    background-color: #34a853; /* Зелений фон */
+    color: white; /* Білий текст */
+    border: 2px solid #34a853;
+}
+
 .download-buttons a:hover {
-    transform: scale(1.05);
-}
-
-/* App Store Button */
-.app-store {
-    background: #ffffff;
-    color: #000;
-    border: 2px solid #000;
-}
-
-.app-store:hover {
-    background: #f1f1f1;
-}
-
-/* Google Play Button */
-.google-play {
-    background: #34a853;
-    color: white;
-}
-
-.google-play:hover {
-    background: #2a8e46;
+    opacity: 0.8; /* При наведенні кнопка стає трохи прозорішою */
 }
 
 .appstore:hover {
