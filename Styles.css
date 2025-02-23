@@ -72,8 +72,10 @@ body {
     text-decoration: none; /* Прибирає підкреслення */
 }
 
-.contact-email:hover {
-    text-decoration: underline;
+.contact-email {
+    color: red;
+    font-weight: bold;
+    text-decoration: none; /* Прибирає підкреслення */
 }
 
     cursor: pointer;
