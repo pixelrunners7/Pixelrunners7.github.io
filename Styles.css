@@ -140,23 +140,39 @@ nav ul li a:hover {
     margin: 10px; /* Відстань між кнопками */
     transition: 0.3s; /* Плавний ефект при наведенні */
 }
-
-.download-buttons .app-store {
-    background-color: #ffffff; /* Білий фон */
-    color: black; /* Чорний текст */
-    border: 2px solid black; /* Чорна рамка */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.download-buttons .google-play {
-    background-color: #34a853; /* Зелений фон */
-    color: white; /* Білий текст */
+.app-store-button, .google-play-button {
+    display: inline-block;
+    padding: 15px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.app-store-button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.google-play-button {
+    background-color: #34a853;
+    color: white;
     border: 2px solid #34a853;
 }
 
-.download-buttons a:hover {
-    opacity: 0.8; /* При наведенні кнопка стає трохи прозорішою */
+.app-store-button:hover, .google-play-button:hover {
+    opacity: 0.8;
 }
-
 .appstore:hover {
     background: #555;
 }
