@@ -256,7 +256,7 @@ section {
     color: #ff4d6d;
 }
 .contact-email {
-    color: #ff4d6d; /* Червоний відтінок */
+    <p>Get in touch with us: <a href="mailto:contact@apexforgestudio.com" class="contact-email">contact@apexforgestudio.com</a></p>
     font-weight: bold;
     text-decoration: underline;
 }
