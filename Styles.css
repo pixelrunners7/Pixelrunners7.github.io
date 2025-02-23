@@ -196,7 +196,11 @@ section {
 .socials a:hover {
     color: #ff4d6d;
 }
-
+.contact-email {
+    color: #ff4d6d; /* Червоний відтінок */
+    font-weight: bold;
+    text-decoration: underline;
+}
 /* Footer */
 footer {
     padding: 20px;
