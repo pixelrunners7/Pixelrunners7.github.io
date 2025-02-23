@@ -125,22 +125,6 @@ nav ul li a:hover {
 }
 
 .download-buttons {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.download-buttons a {
-    font-size: 20px; /* Збільшений розмір тексту */
-    padding: 15px 30px; /* Внутрішні відступи для більшого розміру кнопок */
-    display: inline-block; /* Робить кнопки блоками */
-    text-align: center;
-    border-radius: 10px; /* Закруглені кути */
-    text-decoration: none; /* Прибирає підкреслення у посилань */
-    font-weight: bold;
-    margin: 10px; /* Відстань між кнопками */
-    transition: 0.3s; /* Плавний ефект при наведенні */
-}
-.download-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -148,32 +132,41 @@ nav ul li a:hover {
 }
 
 .app-store-button, .google-play-button {
-    display: inline-block;
-    padding: 15px 20px;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    width: 280px;
-    border: 3px solid white;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
-    transition: 0.2s ease-in-out;
     font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    width: 220px;
+    box-shadow: 4px 4px 0 #222;
 }
 
 .app-store-button {
     background-color: black;
     color: white;
+    border: 2px solid white;
 }
 
 .google-play-button {
-    background-color: #34a853;
+    background-color: green;
     color: white;
+    border: 2px solid white;
 }
 
 .app-store-button:hover, .google-play-button:hover {
-    opacity: 0.85;
-    transform: scale(1.05);
+    box-shadow: 6px 6px 0 #111;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
     
