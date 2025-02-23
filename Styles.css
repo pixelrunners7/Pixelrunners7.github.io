@@ -6,6 +6,45 @@ body {
     color: white;
     text-align: center;
 }
+/* Subscription Section */
+#subscribe {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#subscribe h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#subscribe p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#subscribe input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#subscribe button {
+    padding: 10px 15px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#subscribe button:hover {
+    background: #d43b56;
+}
 
 /* Navigation Menu */
 header {
@@ -69,24 +108,45 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Buttons */
-.buttons .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 10px;
-    font-size: 18px;
-    color: white;
+/* Download Buttons */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.download-buttons a {
+    padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
 }
 
-.appstore {
-    background: #333;
+.download-buttons a:hover {
+    transform: scale(1.05);
 }
 
-.googleplay {
-    background: #1db954;
+/* App Store Button */
+.app-store {
+    background: #ffffff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.app-store:hover {
+    background: #f1f1f1;
+}
+
+/* Google Play Button */
+.google-play {
+    background: #34a853;
+    color: white;
+}
+
+.google-play:hover {
+    background: #2a8e46;
 }
 
 .appstore:hover {
