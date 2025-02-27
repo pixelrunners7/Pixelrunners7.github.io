@@ -264,7 +264,11 @@ section {
     color: #ff4d6d;
 }
 .contact-email {
-    <p>Get in touch with us: <a href="mailto:contact@apexforgestudio.com" class="contact-email">contact@apexforgestudio.com</a></p>
+    <p>Get in touch with us: a[href="mailto:contact@apexforgestudio.com"] {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
     font-weight: bold;
     text-decoration: underline;
 }
