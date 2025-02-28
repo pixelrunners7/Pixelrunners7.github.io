@@ -55,7 +55,7 @@ nav ul li a {
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background: linear-gradient(to bottom, #0a0a0a, #111);
+    background: #000;
 }
 
 .game-title {
@@ -97,4 +97,42 @@ nav ul li a {
 .google-play {
     background: green;
     color: white;
+}
+
+#countdown {
+    background: #222;
+    padding: 40px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#timer {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.email {
+    color: red;
+}
+
+.social-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #ff3366;
 }
