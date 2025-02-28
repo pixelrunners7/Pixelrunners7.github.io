@@ -89,13 +89,17 @@ nav ul li a {
     list-style: none;
     padding: 0;
 }
-
+  
 .countdown {
-    font-size: 20px;
-    color: yellow;
+    font-size: 24px;
     font-family: 'Press Start 2P', cursive;
+    color: yellow;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
-
 .review-box {
     background: #222;
     padding: 15px;
