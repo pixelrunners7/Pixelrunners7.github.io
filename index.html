@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Runners: Time Shift</title>
-    <link rel="stylesheet" href="Styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <div class="logo"> <span>Pixel</span> Runners</div>
+        <div class="logo">Pixel <span>Runners</span></div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -21,8 +21,9 @@
         </nav>
     </header>
 
+    <!-- HOME SECTION -->
     <section id="home" class="hero">
-        <h1 class="game-title">Pixel Runners: <br> Time Shift</h1>
+        <h1 class="game-title">Pixel Runners: Time Shift</h1>
         <p class="subtitle">An epic pixel runner with time manipulation mechanics!</p>
         <div class="download-buttons">
             <a href="#" class="button app-store">Download on the App Store</a>
@@ -30,40 +31,78 @@
         </div>
     </section>
 
+    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About the Game</h2>
-        <p><strong>Pixel Runners: Time Shift</strong> is a fast-paced pixel runner where you don’t just run – you control time!</p>
-        <h3>⚡ Features:</h3>
-        <ul>
+        <p>Pixel Runners: Time Shift is a fast-paced pixel runner where you don’t just run – you control time!</p>
+        <ul class="features">
             <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time to avoid dangers.</li>
-            <li>🏙️ <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
+            <li>🏙 <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
             <li>🎮 <strong>Challenging Gameplay</strong> – Perfect for players who love a good challenge.</li>
             <li>🎨 <strong>Stylish Pixel Art</strong> – Explore neon-lit streets and cyber-inspired environments.</li>
             <li>🎵 <strong>Dynamic Soundtrack</strong> – Synthwave beats to keep you in the zone.</li>
         </ul>
-
         <h2>⏳ Time Until Release:</h2>
-        <p id="timer"></p>
+        <p id="countdown"></p>
     </section>
+     <script>
+        // Countdown Timer
+        function countdown() {
+            const releaseDate = new Date("June 1, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const timeLeft = releaseDate - now;
 
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `⏳ ${days} days ${hours} hrs ${minutes} min ${seconds} sec`;
+
+            setTimeout(countdown, 1000);
+        }
+        countdown();
+    </script>
+
+    <!-- REVIEWS SECTION -->
     <section id="reviews">
         <h2>What Players Say</h2>
         <div class="review">
-            <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
+            <p>💬 "<strong>Pixel Runners: Time Shift</strong> is a pure adrenaline rush! The time control mechanics make it feel fresh and unique." – <strong>Beta Tester</strong></p>
         </div>
         <div class="review">
-            <p>💬 <em>"The visual style is incredible! Feels like running through a neon cyber world."</em> – <strong>Playtester</strong></p>
+            <p>💬 "The visual style is incredible! Feels like running through a neon cyber world." – <strong>Playtester</strong></p>
         </div>
         <div class="review">
-            <p>💬 <em>"The gameplay is incredibly dynamic, blending classic runner mechanics with something entirely new!"</em> – <strong>Early Player</strong></p>
+            <p>💬 "The gameplay is incredibly dynamic, blending classic runner mechanics with something entirely new!" – <strong>Early Player</strong></p>
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Get in touch with us:</p>
         <p class="email">📧 <a href="mailto:contact@apexforgestudio.com">contact@apexforgestudio.com</a></p>
-        <p>Follow us:</p>
-        <p class="social-links">
-            <a href="#">TikTok</a> |
-            <
+
+        <div class="social-links">
+            <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        </div>
+
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest updates on Pixel Runners: Time Shift!</p>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Apex Forge Studio. All rights reserved.</p>
+    </footer>
+
+   
+
+</body>
+</html>
