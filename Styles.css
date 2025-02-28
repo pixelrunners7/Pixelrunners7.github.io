@@ -207,6 +207,81 @@ h1 {
     box-shadow: 6px 6px 0 #111;
     transform: translateY(-2px);
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Runners: Time Shift</title>
+    
+    <style>
+        section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #ff3366;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+
+        .review {
+            background: #222;
+            color: white;
+            padding: 15px;
+            margin: 10px auto;
+            width: 60%;
+            border-radius: 8px;
+        }
+
+        #timer {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="about">
+        <h2>About the Game</h2>
+        <p><strong>Pixel Runners: Time Shift</strong> is a fast-paced pixel runner where you don’t just run – you control time!</p>
+        <ul>
+            <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time.</li>
+            <li>🏙 <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
+            <li>🎮 <strong>Challenging Gameplay</strong> – Perfect for players who love a challenge.</li>
+            <li>🎨 <strong>Stylish Pixel Art</strong> – Explore neon-lit cyber streets.</li>
+            <li>🎵 <strong>Dynamic Soundtrack</strong> – Synthwave beats to keep you in the zone.</li>
+        </ul>
+    </section>
+
+    <section id="countdown">
+        <h2>🕒 Time Until Release:</h2>
+        <p id="timer">Loading...</p>
+    </section>
+
+    <section id="reviews">
+        <h2>What Players Say</h2>
+        <div class="review">
+            <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Apex Forge Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
 
 @media (max-width: 768px) {
     .download-buttons {
