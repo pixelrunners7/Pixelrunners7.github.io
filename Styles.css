@@ -1,4 +1,16 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.pixel-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+/* Далі йдуть інші стилі */body {
     font-family: Arial, sans-serif;
     background: #111;
     color: white;
