@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="Styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+    <script>
+    function countdown() {
+        const releaseDate = new Date("2025-05-25T00:00:00Z").getTime(); // Онови дату релізу!
+        const now = new Date().getTime();
+        const timeLeft = releaseDate - now;
+
+        if (timeLeft <= 0) {
+            document.getElementById("timer").innerHTML = "🎉 The game is now available!";
+            return;
+        }
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = `⏳ ${days} days ${hours} hrs ${minutes} min ${seconds} sec`;
+    }
+
+    setInterval(countdown, 1000);
+    countdown(); // Викликати одразу після завантаження
+</script>
+</body>
+</html>
 <body>
     <header>
         <div class="logo">Pixel Runners</div>
@@ -42,28 +66,22 @@
     <h2>🕒 Time Until Release:</h2>
     <p id="timer">Loading...</p>
 </section>
+</section> <!-- Закриває секцію таймера -->
 
-<script>
-    function countdown() {
-        const releaseDate = new Date("2025-06-01T00:00:00").getTime(); // Set release date
-        const now = new Date().getTime();
-        const timeLeft = 25.05.2025 - now;
-
-        if (timeLeft <= 0) {
-            document.getElementById("timer").innerHTML = "🎉 The game is now available!";
-            return;
-        }
-
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.getElementById("timer").innerHTML = `⏳ ${days} days ${hours} hrs ${minutes} min ${seconds} sec`;
-    }
-
-    setInterval(countdown, 1000);
-</script>
+<section id="reviews">
+    <h2>What Players Say</h2>
+    <div class="review">
+        <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
+    </div>
+    
+    <div class="review">
+        <p>💬 <em>"The visual style is incredible! Feels like running through a neon cyber world."</em> – <strong>Playtester</strong></p>
+    </div>
+    
+    <div class="review">
+        <p>💬 <em>"The gameplay is incredibly dynamic, blending classic runner mechanics with something entirely new!"</em> – <strong>Early Player</strong></p>
+    </div>
+</section>
     <ul>
         <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time to avoid dangers.</li>
         <li>🏙 <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
