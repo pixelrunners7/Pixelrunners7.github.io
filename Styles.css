@@ -1,293 +1,39 @@
-/* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    color: white;
-    text-align: center;
-}
-/* Subscription Section *
-#subscribe {
     background: #111;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    margin: 0;
+    padding: 0;
 }
 
-#subscribe h2 {
-    font-size: 22px;
-    font-family: 'Press Start 2P', cursive;
-    margin-bottom: 15px;
-}
-
-#subscribe p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-#subscribe form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-#subscribe input {
-    padding: 10px;
-    width: 250px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background: black;
-    color: white;
-    font-size: 14px;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-}
-
-#subscribe input::placeholder {
-    color: #999;
-    text-align: center;
-}
-
-#subscribe button {
-    padding: 10px 20px;
-    background: #ff4d6d;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    font-family: 'Press Start 2P', cursive;
-    text-transform: uppercase;
-    transition: background 0.3s;
-}
-
-#subscribe button:hover {
-    background: #d13a56;
-}
-
-.contact-email {
-    color: red;
-    font-weight: bold;
-    text-decoration: none; /* Прибирає підкреслення */
-}
-
-.contact-email {
-    color: red;
-    font-weight: bold;
-    text-decoration: none; /* Прибирає підкреслення */
-}
-
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-#subscribe button:hover {
-    background: #d43b56;
-}
-
-/* Navigation Menu */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10%;
-    background: rgba(0, 0, 0, 0.8);
+    background: black;
+    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
     z-index: 1000;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff4d6d;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+section {
+    padding: 60px 20px;
+    margin-top: 80px;
 }
 
-nav ul li a:hover {
-    color: #ff4d6d;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url('background.jpg') center/cover no-repeat;
-    text-shadow: 2px 2px 8px black;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    font-size: 20px;
-    max-width: 600px;
-    margin-bottom: 20px;
-}
-
-/* Download Buttons */
-.download-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.download-buttons a {
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s, background 0.3s;
-}
-
-.download-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.app-store-button, .google-play-button {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-    width: 220px;
-    box-shadow: 4px 4px 0 #222;
-}
-h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 32px;
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-}
-.app-store-button {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-
-.google-play-button {
-    background-color: green;
-    color: white;
-    border: 2px solid white;
-}
-
-.app-store-button:hover, .google-play-button:hover {
-    box-shadow: 6px 6px 0 #111;
-    transform: translateY(-2px);
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Runners: Time Shift</title>
-    
-    <style>
-        section {
-            text-align: center;
-            padding: 40px;
-        }
-
-        h2 {
-            color: #ff3366;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            font-size: 18px;
-            padding: 5px 0;
-        }
-
-        .review {
-            background: #222;
-            color: white;
-            padding: 15px;
-            margin: 10px auto;
-            width: 60%;
-            border-radius: 8px;
-        }
-
-        #timer {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ffcc00;
-        }
-    </style>
-</head>
-<body>
-
-    <section id="about">
-        <h2>About the Game</h2>
-        <p><strong>Pixel Runners: Time Shift</strong> is a fast-paced pixel runner where you don’t just run – you control time!</p>
-        <ul>
-            <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time.</li>
-            <li>🏙 <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
-            <li>🎮 <strong>Challenging Gameplay</strong> – Perfect for players who love a challenge.</li>
-            <li>🎨 <strong>Stylish Pixel Art</strong> – Explore neon-lit cyber streets.</li>
-            <li>🎵 <strong>Dynamic Soundtrack</strong> – Synthwave beats to keep you in the zone.</li>
-        </ul>
-    </section>
-
-    <section id="countdown">
-        <h2>🕒 Time Until Release:</h2>
-        <p id="timer">Loading...</p>
-    </section>
-
-    <section id="reviews">
-        <h2>What Players Say</h2>
-        <div class="review">
-            <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Apex Forge Studio. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
-/* Fix countdown alignment */
 #countdown {
-    text-align: center;
+    background: #222;
     padding: 40px;
-    background: #111;
-    color: white;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -297,32 +43,29 @@ h1 {
     color: #ffcc00;
 }
 
-/* Center reviews */
 #reviews {
-    text-align: center;
-    padding: 50px 20px;
     background: #222;
-    color: white;
+    padding: 50px 20px;
 }
 
 .review {
-    background: rgba(255, 255, 255, 0.15); /* Трохи світліший */
+    background: rgba(255, 255, 255, 0.15);
     padding: 20px;
     margin: 15px auto;
     width: 80%;
     max-width: 500px;
     border-radius: 10px;
     font-size: 16px;
-    font-style: italic;
     text-align: left;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Додає м'яку тінь */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .review p {
-    color: #f0f0f0; /* Робить текст світлішим */
+    color: #f0f0f0;
 }
-.review p {
-    margin: 10px 0;
+
+.email {
+    color: red;
 }
 
 @media (max-width: 768px) {
@@ -334,75 +77,4 @@ h1 {
     #timer {
         font-size: 22px;
     }
-}
-
-@media (max-width: 768px) {
-    .download-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-    
-.appstore:hover {
-    background: #555;
-}
-
-.googleplay:hover {
-    background: #1ed760;
-}
-
-/* Sections */
-section {
-    padding: 80px 10%;
-}
-
-/* Gallery */
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.gallery img {
-    width: 250px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Social Links */
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.socials a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.socials a:hover {
-    color: #ff4d6d;
-}
-.contact-email {
-    <p>Get in touch with us: a[href="mailto:contact@apexforgestudio.com"] {
-    color: red;
-    text-decoration: none;
-    font-weight: bold;
-}
-    font-weight: bold;
-    text-decoration: underline;
-}
-/* Footer */
-footer {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    margin-top: 50px;
 }
