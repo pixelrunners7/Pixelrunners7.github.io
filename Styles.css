@@ -282,6 +282,55 @@ h1 {
 
 </body>
 </html>
+/* Fix countdown alignment */
+#countdown {
+    text-align: center;
+    padding: 40px;
+    background: #111;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#timer {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Center reviews */
+#reviews {
+    text-align: center;
+    padding: 50px 20px;
+    background: #222;
+    color: white;
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .review {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #timer {
+        font-size: 22px;
+    }
+}
 
 @media (max-width: 768px) {
     .download-buttons {
