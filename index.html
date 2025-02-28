@@ -9,105 +9,61 @@
 </head>
 <body>
 
-<header>
-    <div class="logo">Pixel <span>Runners</span></div>
-    <nav>
+    <header>
+        <div class="logo"> <span>Pixel</span> Runners</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1 class="game-title">Pixel Runners: <br> Time Shift</h1>
+        <p class="subtitle">An epic pixel runner with time manipulation mechanics!</p>
+        <div class="download-buttons">
+            <a href="#" class="button app-store">Download on the App Store</a>
+            <a href="#" class="button google-play">Download on Google Play</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About the Game</h2>
+        <p><strong>Pixel Runners: Time Shift</strong> is a fast-paced pixel runner where you don’t just run – you control time!</p>
+        <h3>⚡ Features:</h3>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Screenshots</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time to avoid dangers.</li>
+            <li>🏙️ <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
+            <li>🎮 <strong>Challenging Gameplay</strong> – Perfect for players who love a good challenge.</li>
+            <li>🎨 <strong>Stylish Pixel Art</strong> – Explore neon-lit streets and cyber-inspired environments.</li>
+            <li>🎵 <strong>Dynamic Soundtrack</strong> – Synthwave beats to keep you in the zone.</li>
         </ul>
-    </nav>
-</header>
 
-<section class="hero">
-    <h1 class="game-title">Pixel <br> Runners: <br> Time Shift</h1>
-    <p class="subtitle">An epic pixel runner with time manipulation mechanics!</p>
-    <div class="download-buttons">
-        <a href="https://apps.apple.com/app/idYOURAPP" class="button app-store">Download on the App Store</a>
-        <a href="https://play.google.com/store/apps/details?id=YOURAPP" class="button google-play">Download on Google Play</a>
-    </div>
-</section>
+        <h2>⏳ Time Until Release:</h2>
+        <p id="timer"></p>
+    </section>
 
-</body>
-</html>
+    <section id="reviews">
+        <h2>What Players Say</h2>
+        <div class="review">
+            <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
+        </div>
+        <div class="review">
+            <p>💬 <em>"The visual style is incredible! Feels like running through a neon cyber world."</em> – <strong>Playtester</strong></p>
+        </div>
+        <div class="review">
+            <p>💬 <em>"The gameplay is incredibly dynamic, blending classic runner mechanics with something entirely new!"</em> – <strong>Early Player</strong></p>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About the Game</h2>
-    <p><strong>Pixel Runners: Time Shift</strong> is a fast-paced pixel runner where you don’t just run – you control time!</p>
-    <p>Use unique time manipulation mechanics to overcome traps, dodge obstacles, and discover new paths in a procedurally generated city.</p>
-    <h3>⚡ Features:</h3>
-    <ul>
-        <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time to avoid dangers.</li>
-        <li>🏙️ <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
-        <li>🎮 <strong>Challenging Gameplay</strong> – Perfect for players who love a good challenge.</li>
-        <li>🎨 <strong>Stylish Pixel Art</strong> – Explore neon-lit streets and cyber-inspired environments.</li>
-        <li>🎵 <strong>Dynamic Soundtrack</strong> – Synthwave beats to keep you in the zone.</li>
-    </ul>
-</section>
-
-<section id="countdown">
-    <h2>⏳ Time Until Release:</h2>
-    <p id="timer">Loading...</p>
-</section>
-
-<section id="reviews">
-    <h2>What Players Say</h2>
-    <div class="review">
-        <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
-    </div>
-    <div class="review">
-        <p>💬 <em>"The visual style is incredible! Feels like running through a neon cyber world."</em> – <strong>Playtester</strong></p>
-    </div>
-    <div class="review">
-        <p>💬 <em>"The gameplay is incredibly dynamic, blending classic runner mechanics with something entirely new!"</em> – <strong>Early Player</strong></p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch with us:</p>
-    <p class="email">📧 <a href="mailto:contact@apexforgestudio.com">contact@apexforgestudio.com</a></p>
-    <p>Follow us: 
-        <a href="https://www.tiktok.com/@pixelrunners_off" target="_blank">TikTok</a> | 
-        <a href="https://www.instagram.com/pixelrunners_official" target="_blank">Instagram</a> | 
-        <a href="https://youtube.com/@pixelrunners_official" target="_blank">YouTube</a>
-    </p>
-</section>
-
-<section id="subscribe">
-    <h2>Stay Updated</h2>
-    <p>Subscribe to our newsletter for the latest updates on Pixel Runners: Time Shift!</p>
-    <input type="email" placeholder="Enter your email">
-    <button>Subscribe</button>
-</section>
-
-<script>
-function countdown() {
-    const releaseDate = new Date("2025-05-23T00:00:00Z").getTime();
-    function updateTimer() {
-        const now = new Date().getTime();
-        const timeLeft = releaseDate - now;
-
-        if (timeLeft <= 0) {
-            document.getElementById("timer").innerHTML = "🚀 Game Released!";
-            return;
-        }
-
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.getElementById("timer").innerHTML = `⏳ ${days} days ${hours} hrs ${minutes} min ${seconds} sec`;
-    }
-
-    updateTimer();
-    setInterval(updateTimer, 1000);
-}
-countdown();
-</script>
-
-</body>
-</html>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us:</p>
+        <p class="email">📧 <a href="mailto:contact@apexforgestudio.com">contact@apexforgestudio.com</a></p>
+        <p>Follow us:</p>
+        <p class="social-links">
+            <a href="#">TikTok</a> |
+            <
