@@ -42,6 +42,21 @@
         </ul>
 
         <h2>⏳ Time Until Release:</h2>
+        function updateCountdown() {
+    const releaseDate = new Date("2025-05-01T00:00:00").getTime();
+    const now = new Date().getTime();
+    const timeLeft = releaseDate - now;
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = `${days} days ${hours} hrs ${minutes} min ${seconds} sec`;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
         <div id="countdown" class="countdown"></div>
     </section>
 
