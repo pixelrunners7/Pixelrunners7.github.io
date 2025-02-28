@@ -35,9 +35,60 @@
     </section>
 
     <section id="about">
-        <h2>About the Game</h2>
-        <p>Pixel Runners: Time Shift is a fast-paced runner where you can control time and overcome obstacles!</p>
-    </section>
+    <h2>About the Game</h2>
+    <p><strong>Pixel Runners: Time Shift</strong> is a fast-paced pixel runner where you don’t just run – you control time!</p>
+    <p>Use unique time manipulation mechanics to overcome traps, dodge obstacles, and discover new paths in a procedurally generated city. Get ready for fast-paced action, reflex-testing gameplay, and a stunning retro pixel-art aesthetic.</p>
+<section id="countdown">
+    <h2>🕒 Time Until Release:</h2>
+    <p id="timer">Loading...</p>
+</section>
+
+<script>
+    function countdown() {
+        const releaseDate = new Date("2025-06-01T00:00:00").getTime(); // Set release date
+        const now = new Date().getTime();
+        const timeLeft = 25.05.2025 - now;
+
+        if (timeLeft <= 0) {
+            document.getElementById("timer").innerHTML = "🎉 The game is now available!";
+            return;
+        }
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = `⏳ ${days} days ${hours} hrs ${minutes} min ${seconds} sec`;
+    }
+
+    setInterval(countdown, 1000);
+</script>
+    <ul>
+        <li>⚡ <strong>Time Manipulation</strong> – Stop, rewind, or slow down time to avoid dangers.</li>
+        <li>🏙 <strong>Procedurally Generated Levels</strong> – No two runs are ever the same!</li>
+        <li>🎮 <strong>Challenging Gameplay</strong> – Perfect for players who love a good challenge.</li>
+        <li>🎨 <strong>Stylish Pixel Art</strong> – Explore neon-lit streets and cyber-inspired environments.</li>
+        <li>🎵 <strong>Dynamic Soundtrack</strong> – Synthwave beats to keep you in the zone.</li>
+    </ul>
+</section>
+    <section id="reviews">
+    <h2>What Players Say</h2>
+    
+    <div class="review">
+        <p>💬 <em>"Pixel Runners: Time Shift is a pure adrenaline rush! The time control mechanics make it feel fresh and unique."</em> – <strong>Beta Tester</strong></p>
+    </div>
+    
+    <div class="review">
+        <p>💬 <em>"The visual style is incredible! Feels like running through a neon cyber world."</em> – <strong>Playtester</strong></p>
+    </div>
+    
+    <div class="review">
+        <p>💬 <em>"The gameplay is incredibly dynamic, blending classic runner mechanics with something entirely new!"</em> – <strong>Early Player</strong></p>
+    </div>
+    
+    <p><strong>📢 Want to become a tester? Subscribe for updates!</strong></p>
+</section>
 
     <section id="screenshots">
         <h2>Screenshots</h2>
