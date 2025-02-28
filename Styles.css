@@ -1,4 +1,6 @@
-/* General Styles */
+/* Підключення піксельного шрифту */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     background: #111;
@@ -49,36 +51,22 @@ nav ul li a {
     font-size: 12px;
 }
 
-/* Sections */
-section {
-    padding: 100px 20px;
-}
-
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Головний заголовок гри */
 .game-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 32px;
+    text-shadow: 3px 3px black;
+    color: white;
 }
 
-.download-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
+/* Кнопки скачування */
 .button {
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 14px;
+    display: inline-block;
     width: 300px;
     text-align: center;
     border: 3px solid white;
@@ -92,23 +80,4 @@ section {
 .google-play {
     background: green;
     color: white;
-}
-
-/* Social Links */
-.social-links a {
-    color: white;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-    color: #ff3366;
-}
-
-/* Footer */
-footer {
-    background: black;
-    padding: 20px;
-    text-align: center;
 }
