@@ -24,19 +24,44 @@ body {
     margin: 60px 0 20px 0;
 }
 
+/* Фікс меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Прибираємо заголовок "Pixel Runners" */
+header h1 {
+    display: none;
+}
+
 /* Виправляємо кнопки */
 .button {
     font-family: 'Press Start 2P', cursive;
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 14px;
-    display: inline-block;
-    width: 300px;
-    text-align: center;
-    border: 3px solid white;
-    background: black;
-    color: white;
-    transition: 0.3s;
 }
 
 .button:hover {
