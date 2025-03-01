@@ -23,8 +23,8 @@
     font-family: Arial, sans-serif;
     body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff007f, #6100ff, #00d4ff); /* Неоновий градієнт */
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #ff007f, #6100ff, #00d4ff) !important; /* Неоновий градієнт */
+    background-attachment: fixed !important;
     color: white;
     text-align: center;
     margin: 0;
