@@ -177,6 +177,10 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
+section, .content-block, .countdown-container {
+    background: transparent !important;
+}
+
 /* Стилі для таймера */
 .countdown {
     font-family: 'Press Start 2P', cursive;
