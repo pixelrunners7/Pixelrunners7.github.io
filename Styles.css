@@ -251,7 +251,9 @@ section, .content-block, .countdown-container {
 .subscribe-form button:hover {
     background: linear-gradient(45deg, #ffcc00, #ff007f);
 }
-
+.subscribe-form {
+    margin-bottom: 40px; /* Додаємо більше простору під формою підписки */
+}
 footer {
     width: 100%;
     padding: 20px;
