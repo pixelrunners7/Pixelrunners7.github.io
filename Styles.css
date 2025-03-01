@@ -16,19 +16,20 @@ body {
     height: 100vh; /* Висота на весь екран */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Центруємо по вертикалі */
+    align-items: center; /* Центруємо по горизонталі */
     text-align: center;
     background: #0a0e1a; /* Темний фон */
     padding: 20px;
 }
 
+/* Заголовок */
 .pixel-title {
     font-size: 56px; /* Збільшуємо */
     text-transform: uppercase;
     color: white;
     text-shadow: 4px 4px 0px #000;
-    margin-bottom: 30px; /* Відступ перед кнопками */
+    margin-bottom: 40px; /* Збільшуємо відстань перед кнопками */
 }
 
 .button-container {
