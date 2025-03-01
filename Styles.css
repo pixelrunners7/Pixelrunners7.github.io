@@ -65,7 +65,10 @@ header h1 {
     border-radius: 5px;
     font-size: 14px;
 }
-
+.button {
+    width: 320px; /* Збільшена ширина */
+    padding: 18px 35px; /* Більший padding */
+}
 .button:hover {
     background: #ffcc00;
     color: black;
