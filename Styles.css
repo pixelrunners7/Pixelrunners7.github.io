@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff007f, #6100ff, #00d4ff) !important;
+    background-attachment: fixed !important;
+    color: white !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
 .pixel-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 48px;
@@ -12,36 +24,15 @@
     margin: 20px 0;
 }
 
-/* Додаємо стиль для тексту під назвою */
+/* Текст під заголовком */
 .game-description {
-    font-size: 20px; /* Збільшений розмір тексту */
+    font-size: 20px;
     text-align: center;
-    font-weight: bold; /* Товщий шрифт для кращої читабельності */
+    font-weight: bold;
     margin-top: 10px;
 }
-/* Далі йдуть інші стилі */body {
-    font-family: Arial, sans-serif;
-    body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff007f, #6100ff, #00d4ff) !important; /* Неоновий градієнт */
-    background-attachment: fixed !important;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-    background-attachment: fixed;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
 
+/* Навігаційне меню */
 header {
     background: black;
     padding: 20px;
@@ -54,6 +45,7 @@ header {
     z-index: 1000;
 }
 
+/* Логотип */
 .logo {
     font-family: 'Press Start 2P', cursive;
     color: #ff3366;
@@ -61,43 +53,27 @@ header {
     margin-left: 20px;
 }
 
-.logo span {
-    color: white;
-}
-
+/* Меню */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
 }
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #0a0a0a, #111);
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
-.download-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
+/* Кнопки завантаження */
 .button {
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
@@ -120,11 +96,7 @@ nav ul li a {
     color: white;
 }
 
-.features {
-    list-style: none;
-    padding: 0;
-}
-  
+/* Таймер */
 .countdown {
     font-size: 24px;
     font-family: 'Press Start 2P', cursive;
@@ -135,61 +107,82 @@ nav ul li a {
     display: inline-block;
     margin-top: 10px;
 }
+
+/* Відгуки */
 .review-box {
-    background: #222;
+    background: #222 !important;
+    color: white !important;
     padding: 15px;
     margin: 10px auto;
     width: 80%;
     border-radius: 10px;
 }
 
+/* Контактний email */
 .contact-section .email {
-    color: red;
+    color: #ff007f;
     font-weight: bold;
-}
-
-.social-link {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+}
+.contact-section .email:hover {
+    color: #ffcc00;
 }
 
-.social-link:hover {
-    color: #ff3366;
+/* Соцмережі */
+.social-links {
+    display: flex !important;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.social-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #ff007f;
 }
 
+/* Поле підписки */
 .subscribe-form input {
     padding: 10px;
     width: 250px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
 }
-
 .subscribe-form button {
-    padding: 10px;
-    background: blue;
+    background: linear-gradient(45deg, #ff007f, #6100ff);
     color: white;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.subscribe-form button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff007f);
 }
 
+/* Footer */
 footer {
-    background: #000;
+    background: black;
     padding: 20px;
     margin-top: 20px;
 }
+
+/* Виправлення білого фону */
 section, .content-block, .countdown-container {
     background: transparent !important;
+    color: white !important;
 }
 
-/* Стилі для таймера */
-.countdown {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    color: #FFD700; /* Золотий колір для цифр */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    background: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
-    padding: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
+/* Виправлення розташування emoji */
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
