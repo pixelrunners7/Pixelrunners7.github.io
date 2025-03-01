@@ -9,9 +9,25 @@
     letter-spacing: 2px;
     line-height: 1.1; /* Зменшений міжрядковий інтервал */
     text-shadow: 3px 3px 0px #000; /* Додає тінь */
+    .pixel-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px; /* Збільшений розмір шрифту */
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1; /* Зменшений міжрядковий інтервал */
+    text-shadow: 3px 3px 0px #000; /* Додає тінь */
     margin: 20px 0;
 }
 
+/* Додаємо стиль для тексту під назвою */
+.game-description {
+    font-size: 20px; /* Збільшений розмір тексту */
+    text-align: center;
+    font-weight: bold; /* Товщий шрифт для кращої читабельності */
+    margin-top: 10px;
+}
 /* Далі йдуть інші стилі */body {
     font-family: Arial, sans-serif;
     background: #111;
