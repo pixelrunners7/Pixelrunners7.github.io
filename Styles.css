@@ -68,7 +68,41 @@ header h1 {
     background: #ffcc00;
     color: black;
 }
+.button:hover {
+    background: #ffcc00;
+    color: black;
+}
 
+/* Фіксуємо накладання кнопок */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Відстань між кнопками */
+    margin-top: 20px;
+}
+
+.button {
+    width: 300px; /* Фіксована ширина */
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 3px solid white;
+    transition: 0.3s;
+    display: block;
+}
+
+.button:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Фікс кнопок App Store та Google Play */
+.app-store {
+    background: black;
+    color: white;
+}
 /* Фікс кнопок App Store та Google Play */
 .app-store {
     background: black;
