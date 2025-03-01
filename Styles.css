@@ -37,8 +37,7 @@ header {
     letter-spacing: 2px;
     line-height: 1.1;
     text-shadow: 4px 4px 0px #000, -4px -4px 0px #000, 4px -4px 0px #000, -4px 4px 0px #000;
-    margin-top: 100px; /* Змінюй значення для корекції позиції */
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 /* Виправлення стилю кнопок */
