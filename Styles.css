@@ -2,22 +2,13 @@
 
 .pixel-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 48px; /* Збільшений розмір шрифту */
+    font-size: 48px;
     text-align: center;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 1.1; /* Зменшений міжрядковий інтервал */
-    text-shadow: 3px 3px 0px #000; /* Додає тінь */
-    .pixel-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 48px; /* Збільшений розмір шрифту */
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1.1; /* Зменшений міжрядковий інтервал */
-    text-shadow: 3px 3px 0px #000; /* Додає тінь */
+    line-height: 1.1;
+    text-shadow: 3px 3px 0px #000;
     margin: 20px 0;
 }
 
