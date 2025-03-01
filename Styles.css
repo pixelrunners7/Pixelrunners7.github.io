@@ -12,7 +12,62 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Фіксуємо перший екран */
+.hero-section {
+    height: 100vh; /* Висота на весь екран */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0a0e1a; /* Темний фон */
+    padding: 20px;
+}
 
+/* Заголовок */
+.pixel-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px 4px 0px #000;
+    margin-bottom: 20px; /* Відступ перед кнопками */
+}
+
+/* Контейнер кнопок */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Відстань між кнопками */
+    align-items: center;
+}
+
+/* Стилі кнопок */
+.button {
+    width: 320px;
+    padding: 15px 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+    border: 3px solid white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.app-store {
+    background: black;
+    color: white;
+}
+
+.google-play {
+    background: green;
+    color: white;
+}
+
+.button:hover {
+    background: #ffcc00;
+    color: black;
+}
 /* Фіксуємо заголовок */
 .pixel-title {
     font-family: 'Press Start 2P', cursive;
