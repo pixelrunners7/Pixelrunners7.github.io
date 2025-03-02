@@ -1,49 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Приховано H1 у шапці (header) */
 header h1 {
     display: none;
 }
-/* Фіксуємо фон */
+
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff007f, #6100ff, #00d4ff) !important;
+    background: linear-gradient(135deg, #111111, #3a3e1a);
     background-attachment: fixed !important;
     color: white !important;
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
+/* Секція героя (перший екран) */
 .hero-section {
-    height: 100vh; /* Висота на весь екран */
+    height: 100vh; /* висота на весь екран */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центруємо по вертикалі */
-    align-items: center; /* Центруємо по горизонталі */
+    justify-content: center; /* центруємо вертикально */
+    align-items: center; /* центруємо горизонтально */
     text-align: center;
-    background: #0a0e1a; /* Темний фон */
+    background: #3a3e1a; /* темний фон */
     padding: 20px;
 }
 
-/* Заголовок */
+/* Основний заголовок */
 .pixel-title {
-    font-size: 56px; /* Збільшуємо */
-    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    text-align: center;
     color: white;
-    text-shadow: 4px 4px 0px #000;
-    margin-bottom: 40px; /* Збільшуємо відстань перед кнопками */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 0px #000;
+    margin: 60px 0 20px 0;
 }
 
+/* Меню навігації */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Виправлення стилів для секцій */
+section, .content-block, .countdown-container {
+    background: transparent !important;
+    color: white !important;
+}
+
+/* Центрування розділів сторінки */
+#about, #reviews, #contact, #subscribe {
+    text-align: center;
+}
+
+/* Блок кнопок завантаження */
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Відстань між кнопками */
+    gap: 20px;
     align-items: center;
-}
-
-.button {
-    width: 350px;
-    padding: 18px 35px;
-    font-size: 16px;
-    border: 4px solid white;
 }
 
 /* Стилі кнопок */
@@ -57,220 +86,68 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
 }
+.button:hover {
+    background: #ffcc00;
+    color: black;
+}
 
+/* Кнопки App Store та Google Play */
 .app-store {
     background: black;
     color: white;
 }
-
 .google-play {
     background: green;
     color: white;
 }
 
-.button:hover {
-    background: #ffcc00;
-    color: black;
-}
-/* Фіксуємо заголовок */
-.pixel-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 48px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1.1;
-    text-shadow: 3px 3px 0px #000;
-    margin: 60px 0 20px 0;
-}
-
-/* Фікс меню */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Прибираємо заголовок "Pixel Runners" */
-header h1 {
-    display: none;
-}
-
-/* Виправляємо кнопки */
-.button {
-    font-family: 'Press Start 2P', cursive;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.button {
-    width: 320px; /* Збільшена ширина */
-    padding: 18px 35px; /* Більший padding */
-}
-.button:hover {
-    background: #ffcc00;
-    color: black;
-}
-.button:hover {
-    background: #ffcc00;
-    color: black;
-}
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Збільшена відстань між кнопками */
-    margin-top: 20px;
-}
-/* Фіксуємо накладання кнопок */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px; /* Відстань між кнопками */
-    margin-top: 20px;
-}
-
-.button {
-    width: 300px; /* Фіксована ширина */
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 14px;
-    text-align: center;
-    border: 3px solid white;
-    transition: 0.3s;
-    display: block;
-}
-
-.button:hover {
-    background: #ffcc00;
-    color: black;
-}
-
-/* Фікс кнопок App Store та Google Play */
-.app-store {
-    background: black;
-    color: white;
-}
-/* Фікс кнопок App Store та Google Play */
-.app-store {
-    background: black;
-    color: white;
-}
-
-.google-play {
-    background: green;
-    color: white;
-}
-
-/* Таймер */
-.countdown {
-    font-size: 24px;
-    font-family: 'Press Start 2P', cursive;
-    color: yellow;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* Виправлення стилів для секцій */
-section, .content-block, .countdown-container {
-    background: transparent !important;
-    color: white !important;
-}
-
-/* Відгуки */
+/* Відгуки (секція "What Players Say") */
 .review-box {
     background: #222 !important;
     padding: 15px;
     margin: 10px auto;
     width: 80%;
     border-radius: 10px;
+    text-align: center;
+}
+.review-box blockquote {
+    margin: 0;
 }
 
-/* Соцмережі */
+/* Соцмережі (секція "Contact") */
 .social-links {
     display: flex !important;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
 }
-
 .social-links a {
     color: white !important;
     font-size: 20px;
     text-decoration: none;
 }
-
 .social-links a:hover {
-    color: #ff007f;
+    color: #ffcc00;
 }
 
-/* Поле підписки */
+/* Форма підписки (секція "Stay Updated") */
+.subscribe-form {
+    text-align: center;
+    margin-bottom: 40px;
+}
 .subscribe-form input {
     padding: 10px;
     width: 250px;
     border: 2px solid white;
+    border-radius: 5px;
     background: transparent;
     color: white;
 }
-
 .subscribe-form button {
-    background: linear-gradient(45deg, #ff007f, #6100ff);
+    background: linear-gradient(45deg, #ffcc00, #ff8000);
     color: white;
-    border: none;
+    border: 2px solid white;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
     border-radius: 5px;
-    transition: 0.3s;
-}
-
-.subscribe-form button:hover {
-    background: linear-gradient(45deg, #ffcc00, #ff007f);
-}
-.subscribe-form {
-    margin-bottom: 40px; /* Додаємо більше простору під формою підписки */
-}
-footer {
-    width: 100%;
-    padding: 20px;
-    background: black;
-    color: white;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
+    cursor: pointer;
 }
