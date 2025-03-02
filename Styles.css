@@ -136,7 +136,15 @@ section, .content-block, .countdown-container {
     background: #ffcc00;
     color: black;
 }
+a[href^="mailto"] {
+    color: #FFD700 !important; /* Золотистий колір */
+    text-decoration: none; /* Прибирає підкреслення */
+    font-weight: bold; /* Робить текст жирним */
+}
 
+a[href^="mailto"]:hover {
+    color: #FFA500; /* Трохи темніший золотистий при наведенні */
+}
 /* Форма підписки (секція "Stay Updated") */
 .subscribe-form {
     text-align: center;
