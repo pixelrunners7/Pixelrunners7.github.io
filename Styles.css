@@ -29,7 +29,7 @@ body {
 
 .pixel-title {
     font-family: 'Press Start 2P', cursive; /* Піксельний стиль */
-    font-size: 48px; /* Зменшено для кращого розміщення */
+    font-size: 46px; /* Зменшено для кращого розміщення */
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
