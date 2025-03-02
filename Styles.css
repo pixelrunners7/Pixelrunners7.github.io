@@ -30,7 +30,7 @@ body {
 .pixel-title {
     font-family: 'Press Start 2P', cursive; /* Піксельний стиль */
     font-size: 46px; /* Зменшено для кращого розміщення */
-    line-height: 1.6; /* або 1.4, якщо потрібно більше */
+    line-height: 1.4; /* або 1.4, якщо потрібно більше */
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
