@@ -28,14 +28,14 @@ body {
 }
 
 .pixel-title {
-    font-family: 'Press Start 2P', cursive; /* Піксельний шрифт */
-    font-size: 56px; /* Розмір, можна збільшити, якщо потрібно */
-    color: white; /* Повертаємо білий колір */
+    font-family: 'Press Start 2P', cursive; /* Піксельний стиль */
+    font-size: 48px; /* Зменшено для кращого розміщення */
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 4px 4px 0px #000; /* Тінь для кращої читабельності */
+    text-shadow: 3px 3px 0px #000;
     text-align: center;
-    margin-bottom: 40px; /* Відступ вниз */
+    margin-bottom: 30px; /* Коригування відступу */
 }
 /* Меню навігації */
 nav ul {
