@@ -38,9 +38,9 @@ body {
     text-align: center;
     margin-bottom: 30px; /* Коригування 
 /* Меню навігації */
-    .subtitle {
-    font-size: 24px !important;
-    color: white !important;
+    .subtitle { 
+    font-size: 22px !important; /* або більше, якщо потрібно */
+    text-align: center;
 }
 nav ul {
     list-style: none;
