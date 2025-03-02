@@ -37,12 +37,14 @@ body {
     text-shadow: 3px 3px 0px #000;
     text-align: center;
     margin-bottom: 30px; /* Коригування 
-    center;
+        margin-bottom: 30px; /* Коригування відступу */
 }
-    .subtitle { 
-    font-size: 22px !important; /* або більше, якщо потрібно */
-    text-align: center;
+.subtitle { /* або інший клас, який відповідає за цей текст */
+    font-size: 18px; /* або більше, наприклад, 20px */
+    font-size: 20px; /* або більше, наприклад, 20px */
 }
+/* Меню навігації */
+nav ul {
 nav ul {
     list-style: none;
     padding: 0;
