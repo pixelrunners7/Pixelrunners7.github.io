@@ -35,7 +35,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #3a3e1a;
+    text-align: center;
+    background: #0D1B2A; /* Темно-синій колір */
     padding: 20px;
 }
 
@@ -62,17 +63,28 @@ body {
     padding: 15px 30px;
     font-size: 16px;
     font-family: 'Press Start 2P', cursive;
+    text-align: center;
     border: 3px solid white;
     text-transform: uppercase;
     transition: 0.3s;
+    border-radius: 8px; /* Закруглені кути */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Тінь */
 }
 
-.app-store { background: black; color: white; }
-.google-play { background: green; color: white; }
+.app-store {
+    background: black;
+    color: white;
+}
+
+.google-play {
+    background: #1DB954; /* Зеленуватий Google Play */
+    color: white;
+}
 
 .button:hover {
     background: #ffcc00;
     color: black;
+    transform: scale(1.05); /* Легке збільшення */
 }
 
 /* 📌 Відгуки */
