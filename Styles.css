@@ -8,7 +8,15 @@ body {
     margin: 0;
     padding: 0;
 }
+a[href^="mailto"] {
+    color: #FFD700 !important; /* Золотий колір */
+    text-decoration: none; /* Прибирає підкреслення */
+    font-weight: bold; /* Робить текст жирним */
+}
 
+a[href^="mailto"]:hover {
+    color: #FFA500; /* Трохи темніший золотий при наведенні */
+}х
 /* Навігація */
 .nav-links {
     list-style: none;
