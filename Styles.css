@@ -16,7 +16,7 @@ a[href^="mailto"] {
 
 a[href^="mailto"]:hover {
     color: #FFA500; /* Трохи темніший золотий при наведенні */
-}х
+}
 /* Навігація */
 .nav-links {
     list-style: none;
