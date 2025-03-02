@@ -27,16 +27,16 @@ body {
     padding: 20px;
 }
 
-/* Основний заголовок */
 .pixel-title {
-    font-size: 60px; /* або більше, якщо потрібно */
-    color: #ffcc00; /* Золотистий колір */
+    font-family: 'Press Start 2P', cursive; /* Піксельний шрифт */
+    font-size: 56px; /* Розмір, можна збільшити, якщо потрібно */
+    color: white; /* Повертаємо білий колір */
     text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 3px 3px 0px #000;
-    margin-top: 20px; /* Зміни відступ, якщо потрібно */
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 0px #000; /* Тінь для кращої читабельності */
+    text-align: center;
+    margin-bottom: 40px; /* Відступ вниз */
 }
-
 /* Меню навігації */
 nav ul {
     list-style: none;
