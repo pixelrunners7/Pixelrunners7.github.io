@@ -1,198 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Приховано H1 у шапці (header) */
-header h1 {
-    display: none;
-}
-
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #111111, #3a3e1a);
-    background-attachment: fixed !important;
-    color: white !important;
+    background-attachment: fixed;
+    color: white;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Секція героя (перший екран) */
-.hero-section {
-    height: 100vh; /* висота на весь екран */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* центруємо вертикально */
-    align-items: center; /* центруємо горизонтально */
+/* Стилі для заголовка */
+.logo {
     text-align: center;
-    background: #3a3e1a; /* темний фон */
-    padding: 20px;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
-.pixel-title {
-    font-family: 'Press Start 2P', cursive; /* Піксельний стиль */
-    font-size: 46px; /* Зменшено для кращого розміщення */
-    line-height: 1.4; /* або 1.4, якщо потрібно більше */
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 0px #000;
-    text-align: center;
-    margin-bottom: 30px; /* Коригування 
-        margin-bottom: 30px; /* Коригування відступу */
-}
-.subtitle { /* або інший клас, який відповідає за цей текст */
-    font-size: 18px; /* або більше, наприклад, 20px */
-    font-size: 20px; /* або більше, наприклад, 20px */
-}
-/* Меню навігації */
-nav ul {
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-nav ul li a {
-    font-size: 22px; /* Оптимальний розмір */
-    color: white;
-    text-decoration: none;
-    font-family: Arial, sans-serif; /* Замінюємо піксельний шрифт */
-    padding: 10px 15px;
-    transition: 0.3s;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a:hover {
-    color: #ffcc00; /* Золотистий при наведенні */
-}
-/* Виправлення стилів для секцій */
-section, .content-block, .countdown-container {
-    background: transparent !important;
-    color: white !important;
-}
-
-/* Центрування розділів сторінки */
-#about, #reviews, #contact, #subscribe {
-    text-align: center;
-}
-
-/* Блок кнопок завантаження */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-/* Стилі кнопок */
-.button {
-    width: 320px;
-    padding: 15px 30px;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    text-align: center;
-    border: 3px solid white;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-.button:hover {
-    background: #ffcc00;
-    color: black;
-}
-
-/* Кнопки App Store та Google Play */
-.app-store {
-    background: black;
-    color: white;
-}
-.google-play {
-    background: green;
-    color: white;
-}
-    
-/* Відгуки (секція "What Players Say") */
-.review-box {
-    background: #222 !important;
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
-    text-align: center;
-}
-.review-box blockquote {
-    margin: 0;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 2px solid white;
-    border-radius: 5px;
-    transition: 0.3s;
-    background: #222; /* Фон для кнопки */
-}
-
-.social-links a:hover {
-    background: #ffcc00;
-    color: black;
-}
-a[href^="mailto"] {
-    color: #FFD700 !important; /* Золотистий колір */
-    text-decoration: none; /* Прибирає підкреслення */
-    font-weight: bold; /* Робить текст жирним */
-}
-
-a[href^="mailto"]:hover {
-    color: #FFA500; /* Трохи темніший золотистий при наведенні */
-}
-/* Форма підписки (секція "Stay Updated") */
-.subscribe-form {
-    text-align: center;
-    margin-bottom: 40px;
-}
-.subscribe-form input {
-    padding: 10px;
-    width: 250px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
-}
-.subscribe-form button {
-    background: linear-gradient(45deg, #ffcc00, #ff8000);
-    color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* Стилі для відео */
-video {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
-}
-/* Стилі для навігації */
+/* Стилі для меню */
 .nav-links {
     list-style: none;
     display: flex;
@@ -211,11 +36,31 @@ video {
     font-size: 18px;
 }
 
-/* Центрування заголовка */
-.logo {
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Секція героя */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 24px;
-    margin-top: 10px;
+    background: #3a3e1a;
+    padding: 20px;
+}
+
+.pixel-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 46px;
+    line-height: 1.4;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px #000;
+    margin-bottom: 30px;
 }
 
 /* Стилі для кнопок App Store та Google Play */
@@ -251,3 +96,52 @@ video {
     background: #ffcc00;
     color: black;
 }
+
+/* Відео */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Стилі для секції відгуків */
+.review-box {
+    background: #222;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Стилі для контактів */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+    background: #222;
+}
+
+.social-links a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Футер */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+    
