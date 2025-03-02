@@ -52,7 +52,18 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+nav ul li a {
+    font-size: 18px; /* Було 14px, тепер трохи більше */
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    padding: 12px 18px; /* Додано трохи відступів */
+    transition: 0.3s;
+}
 
+nav ul li a:hover {
+    color: #ffcc00; /* Золотистий при наведенні */
+}
 /* Виправлення стилів для секцій */
 section, .content-block, .countdown-container {
     background: transparent !important;
