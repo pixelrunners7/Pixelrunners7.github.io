@@ -29,15 +29,12 @@ body {
 
 /* Основний заголовок */
 .pixel-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 48px;
-    text-align: center;
-    color: white;
+    font-size: 60px; /* або більше, якщо потрібно */
+    color: #ffcc00; /* Золотистий колір */
     text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1.1;
-    text-shadow: 2px 2px 0px #000;
-    margin: 60px 0 20px 0;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 0px #000;
+    margin-top: 20px; /* Зміни відступ, якщо потрібно */
 }
 
 /* Меню навігації */
