@@ -38,6 +38,9 @@ body {
     text-align: center;
     margin-bottom: 30px; /* Коригування відступу */
 }
+.subtitle { /* або інший клас, який відповідає за цей текст */
+    font-size: 18px; /* або більше, наприклад, 20px */
+}
 /* Меню навігації */
 nav ul {
     list-style: none;
