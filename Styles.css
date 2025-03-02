@@ -36,12 +36,12 @@ body {
     letter-spacing: 2px;
     text-shadow: 3px 3px 0px #000;
     text-align: center;
-    margin-bottom: 30px; /* Коригування відступу */
-}
-.subtitle { /* або інший клас, який відповідає за цей текст */
-    font-size: 24px; /* або більше, наприклад, 20px */
-}
+    margin-bottom: 30px; /* Коригування 
 /* Меню навігації */
+    .subtitle {
+    font-size: 24px !important;
+    color: white !important;
+}
 nav ul {
     list-style: none;
     padding: 0;
