@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+/* 📌 Основні стилі */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #111111, #3a3e1a);
@@ -10,24 +9,13 @@ body {
     padding: 0;
 }
 
-/* Стилі для заголовка */
-.logo {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-/* Стилі для меню */
+/* Навігація */
 .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 0;
-}
-
-.nav-links li {
-    display: inline;
 }
 
 .nav-links a {
@@ -40,14 +28,13 @@ body {
     color: #ffcc00;
 }
 
-/* Секція героя */
+/* 📌 Стилі секції героя */
 .hero-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background: #3a3e1a;
     padding: 20px;
 }
@@ -55,7 +42,6 @@ body {
 .pixel-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 46px;
-    line-height: 1.4;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -63,7 +49,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Стилі для кнопок App Store та Google Play */
+/* 📌 Кнопки */
 .button-container {
     display: flex;
     justify-content: center;
@@ -76,72 +62,56 @@ body {
     padding: 15px 30px;
     font-size: 16px;
     font-family: 'Press Start 2P', cursive;
-    text-align: center;
     border: 3px solid white;
     text-transform: uppercase;
     transition: 0.3s;
 }
 
-.app-store {
-    background: black;
-    color: white;
-}
-
-.google-play {
-    background: green;
-    color: white;
-}
+.app-store { background: black; color: white; }
+.google-play { background: green; color: white; }
 
 .button:hover {
     background: #ffcc00;
     color: black;
 }
 
-/* Відео */
-video {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
-}
-
-/* Стилі для секції відгуків */
+/* 📌 Відгуки */
 .review-box {
     background: #222;
     padding: 15px;
     margin: 10px auto;
     width: 80%;
     border-radius: 10px;
+}
+
+/* 📩 Форма підписки */
+.subscribe-form {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-/* Стилі для контактів */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 15px;
+.subscribe-form input {
+    padding: 10px;
+    width: 250px;
     border: 2px solid white;
     border-radius: 5px;
-    transition: 0.3s;
-    background: #222;
+    background: transparent;
+    color: white;
 }
 
-.social-links a:hover {
-    background: #ffcc00;
-    color: black;
+.subscribe-form button {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Футер */
-footer {
-    margin-top: 30px;
-    font-size: 14px;
+/* 📌 Відео */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
 }
-    
