@@ -47,7 +47,12 @@ a[href^="mailto"]:hover {
     background: #0D1B2A; /* Темно-синій колір */
     padding: 20px;
 }
-
+.game-subtitle {
+    font-size: 24px; /* Збільште, якщо потрібно */
+    text-align: center;
+    color: white; /* Якщо потрібно */
+    margin-top: 10px; /* Додайте відступ, якщо треба */
+}
 .game-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 50px;
