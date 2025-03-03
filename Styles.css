@@ -1,7 +1,7 @@
 /* 📌 Основні стилі */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #111111, #3a3e1a);
+    background: #0D1B2A; /* Темно-синій */;
     background-attachment: fixed;
     color: white;
     text-align: center;
