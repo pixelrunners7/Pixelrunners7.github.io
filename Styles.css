@@ -59,9 +59,7 @@ a[href^="mailto"]:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* Підняти заголовок вгору */
-    margin-top: -50px; /* Зміни значення за потребі
-}
+    }
 
     background: linear-gradient(to bottom, #FFFFFF 30%, #FFD700 70%);
     background-clip: text;
