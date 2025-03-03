@@ -131,8 +131,9 @@ a[href^="mailto"]:hover {
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 .review-box::before {
-    content: "💬";
-    margin-right: 8px; /* Відступ між іконкою та текстом */
+    content: "💬" !important;
+    margin-right: 8px !important; /* Відступ між іконкою та текстом */
+    display: inline-block !important;
 }
 /* 📩 Форма підписки */
 .subscribe-form {
