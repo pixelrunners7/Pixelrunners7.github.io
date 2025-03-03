@@ -35,7 +35,22 @@ a[href^="mailto"]:hover {
 .nav-links a:hover {
     color: #ffcc00;
 }
+.social-links a {
+    display: inline-block;
+    background: #ffcc00; /* Жовтий фон (можна змінити на інший колір) */
+    color: black !important; /* Чорний текст */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Закруглені кути */
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+}
 
+.social-links a:hover {
+    background: #ffaa00; /* Темніший жовтий при наведенні */
+    transform: scale(1.1); /* Легке збільшення */
+}
 /* 📌 Стилі секції героя */
 .hero-section {
     height: 100vh;
