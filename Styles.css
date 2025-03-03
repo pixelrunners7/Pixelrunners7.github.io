@@ -124,13 +124,16 @@ a[href^="mailto"]:hover {
     color: white;
     padding: 15px;
     border-radius: 10px;
-    width: 45%; /* Відгуки будуть у дві колонки */
+    width: 45%; /* Дві колонки */
     min-width: 250px;
-    text-align: center;
+    text-align: left; /* 🔹 Вирівнюємо текст до лівого краю */
     font-size: 18px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
-
+.review-box::before {
+    content: "💬";
+    margin-right: 8px; /* Відступ між іконкою та текстом */
+}
 /* 📩 Форма підписки */
 .subscribe-form {
     text-align: center;
