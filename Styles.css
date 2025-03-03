@@ -121,7 +121,6 @@ a[href^="mailto"]:hover {
 
 .review-box {
     display: flex !important; /* 🔹 Вирівнюємо іконку та текст у рядок */
-    align-items: center !important; /* 🔹 Вирівнюємо текст і іконку */
     background: #222;
     color: white;
     padding: 15px;
