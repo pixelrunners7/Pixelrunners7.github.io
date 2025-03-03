@@ -50,28 +50,35 @@ a[href^="mailto"]:hover {
 
 .game-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 46px; /* Або інше значення, якщо треба */
+    font-size: 46px; /* Або інше значення */
     line-height: 1.5; /* Регулювання відстані між рядками */
     text-transform: uppercase;
-    text-align: center; /* Вирівнювання тексту по центру */
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    }
 
-    background: linear-gradient(to bottom, #FFFFFF 30%, #FFD700 70%);
+    /* Градієнтний текст */
+    background: linear-gradient(to bottom, #FFFFFF 30%, #00FFFF 70%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    /* Чорна тінь + синє світіння */
     text-shadow:
-        4px 4px 0px #000000, /* Чорна тінь */
-        0px 0px 15px #00FFFF; /* Блакитне світіння */
+        -3px -3px 0px #000000,
+         3px -3px 0px #000000,
+        -3px 3px 0px #000000,
+         3px 3px 0px #000000,
+         6px 6px 0px #000000,
+         0px 0px 20px #00FFFF, /* Синє світіння */
+         0px 0px 40px #00FFFF, /* Додатковий шар світіння */
+         0px 0px 60px #00FFFF; /* Ефект глибокого світіння */
 
-    display: inline-block;
-    padding: 10px;
+    /* Додатковий ефект світіння */
+    filter: drop-shadow(0px 0px 15px #00FFFF);
 }
 /* 📌 Кнопки */
 .button-container {
