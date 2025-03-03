@@ -111,14 +111,18 @@ a[href^="mailto"]:hover {
     transform: scale(1.05); /* Легке збільшення */
 }
 
-/* 📌 Відгуки */
-.review-box {
-    background: #222;
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
-}
+<section class="reviews">
+    <h2>What Players Say</h2>
+
+    <div class="review-box">💬 "The visual style is incredible!"</div>
+    <div class="review-box">💬 "The gameplay is incredibly fun!"</div>
+    <div class="review-box">💬 "I love the time manipulation mechanics!"</div>
+    <div class="review-box">💬 "This is the best pixel-art game I've played!"</div>
+    <div class="review-box">💬 "Can't wait to compete with friends!"</div>
+    <div class="review-box">💬 "The soundtrack is pure synthwave perfection!"</div>
+    <div class="review-box">💬 "Smooth controls and fast-paced action!"</div>
+    <div class="review-box">💬 "Feels like a retro classic with modern mechanics!"</div>
+</section>
 
 /* 📩 Форма підписки */
 .subscribe-form {
