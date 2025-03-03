@@ -50,20 +50,25 @@ a[href^="mailto"]:hover {
 
 .game-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 64px; /* Змінюй розмір, якщо потрібно */
+    font-size: 62px; /* Змінюй розмір, якщо потрібно */
     text-transform: uppercase;
     text-align: center;
-
-    background: linear-gradient(to bottom, #FFFFFF 20%, #FFD700 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow:
-        4px 4px 0px #000000, /* Чорна тінь */
-        0px 0px 15px #00FFFF; /* Блакитне світіння */
-
     display: inline-block;
     padding: 10px;
+
+    /* Градієнтний текст (білий зверху, жовтий знизу) */
+    background: linear-gradient(to bottom, #FFFFFF 20%, #FFD700 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Чорна тінь */
+    text-shadow:
+        4px 4px 0px #000000, /* Чорна основна тінь */
+        0px 0px 10px #000000, /* Легке чорне розмиття */
+        0px 0px 20px #FFD700; /* Жовте світіння */
+
+    /* Додаємо м'яке світіння */
+    filter: drop-shadow(0px 0px 10px #FFD700);
 }
 
 /* 📌 Кнопки */
