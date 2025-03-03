@@ -13,7 +13,13 @@ a[href^="mailto"] {
     text-decoration: none; /* Прибирає підкреслення */
     font-weight: bold; /* Робить текст жирним */
 }
+a[href*="apexforgestudio.com"] {
+    color: #ffaa00 !important;
+}
 
+a[href*="apexforgestudio.com"]:hover {
+    color: #ffcc00 !important;
+}
 a[href^="mailto"]:hover {
     color: #FFA500; /* Трохи темніший золотий при наведенні */
 }
