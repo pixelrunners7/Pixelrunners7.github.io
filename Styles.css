@@ -45,7 +45,7 @@ a[href^="mailto"]:hover {
     align-items: center;
     text-align: center;
     background: #0D1B2A; /* Темно-синій колір */
-    padding: 20px;
+    padding: 10px;
 }
 .game-subtitle {
     font-size: 24px; /* Збільште, якщо потрібно */
@@ -72,6 +72,7 @@ a[href^="mailto"]:hover {
 
     display: inline-block;
     padding: 10px;
+    margin-top: -20px;/*
 }
 /* 📌 Кнопки */
 .button-container {
