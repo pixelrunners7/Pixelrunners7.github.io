@@ -120,20 +120,23 @@ a[href^="mailto"]:hover {
 }
 
 .review-box {
+    display: flex; /* Щоб іконка стояла ліворуч, а текст праворуч */
+    align-items: center; /* Вирівнюємо іконку та текст по центру */
     background: #222;
     color: white;
     padding: 15px;
     border-radius: 10px;
-    width: 45%; /* Дві колонки */
+    width: 45%; /* Відгуки будуть у дві колонки */
     min-width: 250px;
-    text-align: left; /* 🔹 Вирівнюємо текст до лівого краю */
+    text-align: left; /* Вирівнюємо текст ліворуч */
     font-size: 18px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 .review-box::before {
-    content: "💬" !important;
+    content: "💬" !important; /* Додаємо іконку перед текстом */
     margin-right: 8px !important; /* Відступ між іконкою та текстом */
     display: inline-block !important;
+    font-size: 20px; /* Розмір іконки */
 }
 /* 📩 Форма підписки */
 .subscribe-form {
