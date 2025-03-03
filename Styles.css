@@ -50,8 +50,8 @@ a[href^="mailto"]:hover {
 
 .game-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 60px; /* Змінюй при потребі */
-    line-height: 1.4; /* Додає відстань між рядками */
+    font-size: 58px; /* Змінюй при потребі */
+    line-height: 1.5; /* Додає відстань між рядками */
     text-transform: uppercase;
     text-align: center;
 
