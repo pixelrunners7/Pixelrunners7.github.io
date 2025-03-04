@@ -95,11 +95,6 @@ a[href^="mailto"]:hover {
     padding: 10px;
     margin-top: -20px;/*
 }
-.header-title {
-    color: #FFD700; /* Золотий колір */
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.8); /* Світіння */
-}
     /* 📌 Кнопки */
 .button-container {
     display: flex;
