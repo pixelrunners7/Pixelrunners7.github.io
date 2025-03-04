@@ -148,7 +148,7 @@ a[href^="mailto"]:hover {
 .reviews {
     display: flex;
     flex-wrap: wrap; /* Дозволяє переносити відгуки на новий рядок */
-    justify-content: center;
+    justify-content: left;
     gap: 20px; /* Відстань між відгуками */
     padding: 40px 20px;
 }
