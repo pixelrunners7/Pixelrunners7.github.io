@@ -202,3 +202,13 @@ video {
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
 }
+footer a {
+    color: #FFA500; /* Яскравий оранжевий, або вибери інший */
+    text-decoration: none; /* Прибрати підкреслення, якщо потрібно */
+    font-weight: bold; /* Щоб виділити */
+}
+
+footer a:hover {
+    color: #FFD700; /* Золотистий при наведенні */
+    text-decoration: underline;
+}
