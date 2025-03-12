@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pixel Runners: Time Shift</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        h1, h2 { color: #333; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: [Insert Date]</p>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>Pixel Runners: Time Shift</strong> ("Game", "we", "us", "our"). We respect your privacy and are committed to protecting your personal data.</p>
+
+    <h2>2. Information We Collect</h2>
+    <ul>
+        <li><strong>Personal Information:</strong> Name, email (if provided via contact forms).</li>
+        <li><strong>Usage Data:</strong> Device type, IP address, gameplay statistics.</li>
+        <li><strong>Cookies:</strong> Used for analytics and game improvements.</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+        <li>Improve game functionality and user experience.</li>
+        <li>Provide customer support.</li>
+        <li>Analyze user behavior for game enhancements.</li>
+        <li>Send important updates (only if you opt-in).</li>
+    </ul>
+
+    <h2>4. Data Sharing & Third-Party Services</h2>
+    <p>We do <strong>not sell</strong> your data. However, we use:</p>
+    <ul>
+        <li><strong>Google Analytics</strong> (performance tracking).</li>
+        <li><strong>Ad Networks</strong> (if applicable in future updates).</li>
+    </ul>
+
+    <h2>5. Data Security</h2>
+    <p>We implement security measures to protect your data from unauthorized access, loss, or misuse.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>You may have the right to:</p>
+    <ul>
+        <li>Access, modify, or delete your data.</li>
+        <li>Opt-out of tracking (via game settings).</li>
+        <li>Request a copy of collected data.</li>
+    </ul>
+    <p>To exercise your rights, contact us at: <strong>[your-email@example.com]</strong></p>
+
+    <h2>7. Policy Updates</h2>
+    <p>We may update this Privacy Policy. The latest version will always be available on our website.</p>
+
+    <h2>8. Contact Information</h2>
+    <p>If you have any questions, please contact us at: <strong>[your-email@example.com]</strong></p>
+</body>
+</html>
