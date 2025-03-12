@@ -215,3 +215,6 @@ footer a:hover {
     color: #FFD700 !important; /* Золотий при наведенні */
     text-decoration: underline !important;
 }
+    footer {
+    font-family: Arial, sans-serif !important;
+}
