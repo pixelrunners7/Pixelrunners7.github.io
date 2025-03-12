@@ -26,6 +26,15 @@ a[href*="apexforgestudio.com"]:hover {
 a[href^="mailto"]:hover {
     color: #FFA500; /* Трохи темніший золотий при наведенні */
 }
+a[href*="privacy-policy.html"] {
+    color: #FFD700 !important; /* Золотий колір */
+    text-decoration: none; /* Без підкреслення, якщо потрібно */
+}
+
+a[href*="privacy-policy.html"]:hover {
+    color: #FFA500 !important; /* Помаранчевий при наведенні */
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
 /* Навігація */
 .nav-links {
     list-style: none;
@@ -211,10 +220,4 @@ footer a {
     font-weight: bold !important; /* Виділення */
 }
 
-footer a:hover {
-    color: #FFD700 !important; /* Золотий при наведенні */
-    text-decoration: underline !important;
-}
-    footer p, footer a, footer span {
-    font-family: Arial, sans-serif !important;
-}
+
