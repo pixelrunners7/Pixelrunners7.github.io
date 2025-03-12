@@ -206,12 +206,12 @@ video {
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
 }
 footer a {
-    color: #FFA500; /* Яскравий оранжевий, або вибери інший */
-    text-decoration: none; /* Прибрати підкреслення, якщо потрібно */
-    font-weight: bold; /* Щоб виділити */
+    color: #FFA500 !important; /* Яскравий оранжевий */
+    text-decoration: none !important; /* Заборона підкреслення */
+    font-weight: bold !important; /* Виділення */
 }
 
 footer a:hover {
-    color: #FFD700; /* Золотистий при наведенні */
-    text-decoration: underline;
+    color: #FFD700 !important; /* Золотий при наведенні */
+    text-decoration: underline !important;
 }
