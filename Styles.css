@@ -8,6 +8,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.logo {
+    color: #FFD700 !important; /* Золотий колір */
+}
 a[href^="mailto"] {
     color: #FFD700 !important; /* Золотий колір */
     text-decoration: none; /* Прибирає підкреслення */
