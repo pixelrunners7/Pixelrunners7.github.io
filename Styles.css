@@ -35,6 +35,17 @@ a[href*="privacy-policy.html"]:hover {
     color: #FFA500 !important; /* Помаранчевий при наведенні */
     text-decoration: underline; /* Підкреслення при наведенні */
 }
+a[href*="terms-and-conditions.html"] {
+    color: #FFD700 !important; /* Золотий колір */
+    text-decoration: none !important; /* Прибрати підкреслення */
+}
+
+a[href*="terms-and-conditions.html"]:hover {
+    color: #FFA500 !important; /* Оранжевий при наведенні */
+    text-decoration: underline !important; /* Додати підкреслення */
+}
+
+
 /* Навігація */
 .nav-links {
     list-style: none;
