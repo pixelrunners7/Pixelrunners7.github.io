@@ -82,20 +82,20 @@ a[href*="terms-and-conditions.html"]:hover {
 }
 /* 📌 Стилі секції героя */
 .hero-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #0D1B2A; /* Темно-синій колір */
-    padding: 10px;
+  height: 80vh; /* або 75vh для ще меншої висоти */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0D1B2A;
+  padding: 20px 10px; /* було 40px 10px */
 }
 .game-subtitle {
-    font-size: 24px; /* Збільште, якщо потрібно */
+    font-size: 20px; /* Збільште, якщо потрібно */
     text-align: center;
     color: white; /* Якщо потрібно */
-    margin-top: 10px; /* Додайте відступ, якщо треба */
+    margin-top: 5px; /* Додайте відступ, якщо треба */
 }
 .game-title {
     font-family: 'Press Start 2P', cursive;
