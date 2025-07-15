@@ -232,9 +232,15 @@ footer a {
 }
 
 .custom-list li {
-  list-style-type: '➤ ';
-  margin: 0.5em 0;
+    list-style: none;
+    position: relative;
+    margin: 0.5em 0;
+    padding-left: 1.2em;
 }
-.custom-list li strong {
-  color: #ffcc00;
+
+.custom-list li::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
 }
