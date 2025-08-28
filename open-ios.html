@@ -12,6 +12,13 @@
       text-align: center; 
       padding: 50px; 
     }
+    .card {
+      background: #111933;
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 500px;
+      margin: 50px auto;
+    }
     a {
       display: inline-block;
       margin-top: 20px;
@@ -26,19 +33,15 @@
       background: #1e3a8a;
     }
   </style>
-  <script>
-    // Спроба автоматично відкрити App Store
-    window.onload = function() {
-      window.location.href = "https://apps.apple.com/pl/app/pixel-runners-time-shift/id6744031480?l=pl";
-    };
-  </script>
 </head>
 <body>
-  <h1>Open in App Store</h1>
-  <p>If nothing happens, tap the button below.<br>(In TikTok browser this needs a tap.)</p>
-  <a href="https://apps.apple.com/pl/app/pixel-runners-time-shift/id6744031480?l=pl">🍎 Open Pixel Runners: Time Shift</a>
-  <p style="margin-top:20px; font-size:14px; opacity:0.7;">
-    Tip: if it still doesn't open, tap ⋯ and choose "Open in Safari".
-  </p>
+  <div class="card">
+    <h1>Open in App Store</h1>
+    <p>If nothing happens, tap the button below.<br>(In TikTok browser this needs a tap.)</p>
+    <a href="https://apps.apple.com/pl/app/pixel-runners-time-shift/id6744031480?l=pl">🍎 Open Pixel Runners: Time Shift</a>
+    <p style="margin-top:20px; font-size:14px; opacity:0.7;">
+      Tip: if it still doesn't open, tap ⋯ and choose "Open in Safari".
+    </p>
+  </div>
 </body>
 </html>
