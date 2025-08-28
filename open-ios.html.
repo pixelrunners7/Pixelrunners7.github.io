@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open in App Store — Pixel Runners: Time Shift</title>
+  <style>
+    body {
+      background: #0b0f1a;
+      color: #e8f0ff;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      background: #111933;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 500px;
+      margin: 50px auto;
+    }
+    h1 { font-size: 24px; margin-bottom: 10px; }
+    p { font-size: 16px; opacity: .85; }
+    a.btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: #16224a;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    // Автоматичний редірект у App Store
+    window.onload = function() {
+      window.location.href = "https://apps.apple.com/pl/app/pixel-runners-time-shift/id6744031480";
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>Open in App Store</h1>
+    <p>If nothing happens, tap the button below.<br>(In TikTok browser this needs a tap.)</p>
+    <a class="btn" href="https://apps.apple.com/pl/app/pixel-runners-time-shift/id6744031480">
+      🍎 Open Pixel Runners: Time Shift
+    </a>
+    <p style="margin-top:15px;font-size:12px;opacity:.7;">Tip: if it still doesn't open, tap ⋯ and choose “Open in Safari”.</p>
+  </div>
+</body>
+</html>
